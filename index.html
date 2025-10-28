@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sujan Sapkota — Portfolio</title>
+    <meta name="description" content="Sujan Sapkota — Computer Engineer. Portfolio showcasing projects, CV and about me." />
+    <meta property="og:title" content="Sujan Sapkota — Portfolio" />
+    <meta property="og:description" content="Computer Engineer. Projects, CV, About and Contact." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon/favicon.svg" />
+  <!-- Fonts: Professional pairing - Outfit (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="styles/main.css" as="style">
+  <link rel="stylesheet" href="styles/main.css" />
+    <meta name="theme-color" content="#f61500" />
+    <meta property="og:image" content="assets/images/og.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+      <div class="container header__inner">
+        <a class="brand" href="#">
+          <!-- temporary Unsplash portrait used as a placeholder; replace with your photo or avatar in assets/images/ -->
+          <img src="./sujan.jpeg" alt="Sujan portrait placeholder" class="brand__avatar" id="brand-avatar" loading="lazy" />
+          <span class="brand__name">Sujan Sapkota</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation" >
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#cv">CV</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <div class="header__actions">
+          <button id="theme-toggle" class="btn btn--ghost" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+<style>
+    
+</style>
+  <main id="main" role="main">
+  <section class="hero section--full" id="home">
+        <div class="container hero__inner">
+          <div class="hero__left">
+            <h1 class="hero__title animate-on-scroll">Hi — I'm <strong class="accent">Sujan Sapkota</strong><span class="accent-white">.</span></h1>
+            <p class="hero__subtitle animate-on-scroll" id="hero-subtitle">I build high-performance web platforms, delightful interfaces and reliable back-end systems.</p>
+            <div class="hero__meta animate-on-scroll">
+              <span id="years-experience" class="meta__item">Graduate</span>
+              <span class="meta__item">•</span>
+              <span id="current-role" class="meta__item">Computer Engineer</span>
+            </div>
+            <div class="hero__ctas animate-on-scroll">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--outline" href="assets/cv/sujan-cv.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+          <div class="hero__right">
+            <div class="hero__avatar-wrap animate-on-scroll">
+              <span class="hero__glow" aria-hidden="true"></span>
+              <img src="./sujan.jpeg" alt="Sujan portrait placeholder" class="hero__avatar" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <section class="projects section--shade" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2 id="projects-heading" class="animate-on-scroll"><span class="accent">Projects</span></h2>
+            <p class="muted animate-on-scroll">Selected work — click a card to read details. Filter by tag to explore related work.</p>
+          </div>
+
+          <div class="projects__controls animate-on-scroll">
+            <div id="projects-filters" class="projects__filters" role="tablist" aria-label="Project filters">
+              <!-- JS will render filter buttons here -->
+            </div>
+          </div>
+
+          <div id="projects-grid" class="projects__grid" tabindex="0">
+            <noscript>
+              <p class="muted">JavaScript disabled: projects may not render dynamically. Please enable JS for full experience.</p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="animate-on-scroll"><span class="accent">About Me</span> </h2>
+          <p class="animate-on-scroll">I'm a Computer Engineer who builds accessible, high-performance web applications and APIs. I enjoy clean UX, strong test coverage, and mentoring teams to ship reliable products.</p>
+          <h3 class="animate-on-scroll">What I care about</h3>
+          <ul class="chips animate-on-scroll">
+            <li>Performance</li>
+            <li>Accessibility</li>
+            <li>Maintainable code</li>
+            <li>Developer experience</li>
+          </ul>
+          <h3 class="animate-on-scroll">Tech stack</h3>
+          <p class="muted animate-on-scroll">JavaScript · TypeScript · React · Node.js · Postgres · Docker</p>
+        </div>
+      </section>
+
+      <section class="cv section--full section--shade-light" id="cv">
+        <div class="container">
+          <h2 class="animate-on-scroll"><span class="accent">CV</span></h2>
+          <p class="muted animate-on-scroll">A concise CV with experience, projects, and contact details.</p>
+          <div class="cv__inner">
+            <div class="cv__text animate-on-scroll">
+              <p>I specialise in building web platforms with a focus on reliability and user experience. My roles have spanned product engineering, backend systems, and team leadership.</p>
+              <ul>
+                <li>Senior Computer Engineer — focused on web platforms</li>
+                <li>Built and shipped real-time apps and scalable APIs</li>
+                <li>Contributor to open-source tooling and docs</li>
+              </ul>
+            </div>
+            <div class="cv__actions animate-on-scroll">
+              <a class="btn btn--primary" href="assets/cv/sujan-cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="animate-on-scroll"><span class="accent">Contact</span></h2>
+          <p class="muted animate-on-scroll">Prefer email? Use the form or contact me directly.</p>
+          <form id="contact-form" class="contact__form animate-on-scroll" onsubmit="return false;">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div style="grid-column: 1 / -1; margin-top:.6rem">
+              <button id="contact-submit" class="btn btn--primary">Send message</button>
+            </div>
+            <br>
+          </form>
+          <p class="muted animate-on-scroll">Or email directly: <a href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand" style="display:flex;align-items:center;gap:.6rem">
+            <img src="./sujan.jpeg" alt="Sujan avatar" width="44" height="44" style="border-radius:8px" loading="lazy" />
+            <div>
+              <strong>Sujan Sapkota</strong>
+              <div class="footer__note">Computer Engineer — Web & Backend</div>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:.6rem;max-width:36ch">I build reliable web platforms and APIs with a focus on performance, accessibility and developer experience. Open to collaborations and interesting problems.</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social">
+            <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+            <a href="https://instagram.com/your-insta" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
+          </div>
+          <div style="margin-top:.6rem; text-align:right">
+            <a href="privacy.html">Privacy</a> · <a href="sitemap.html">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project modal -->
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal__content">
+        <button id="modal-close" class="modal__close" aria-label="Close">✕</button>
+        <h3 id="modal-title"></h3>
+        <div id="modal-body"></div>
+        <div class="modal__gallery" aria-live="polite">
+          <button id="gallery-prev" class="gallery__btn" aria-label="Previous image">‹</button>
+          <img id="modal-image" src="" alt="Project preview" />
+          <button id="gallery-next" class="gallery__btn" aria-label="Next image">›</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/projects-data.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>

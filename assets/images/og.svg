@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#071022" />
+  <text x="60" y="120" font-size="48" fill="#e6eef8" font-family="Arial">Sujan Sapkota — Portfolio</text>
+  <rect x="60" y="160" width="400" height="240" rx="12" fill="#0b1220" stroke="#f61500" stroke-width="6" />
+  <text x="80" y="420" font-size="20" fill="#98a0b1">Computer Engineer — Projects, CV, Contact</text>
+</svg>
