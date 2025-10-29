@@ -34,7 +34,7 @@ body{font-family:var(--font-body);margin:0;background:linear-gradient(180deg,#07
 /* make sure anchored sections are not hidden behind the fixed header */
 section{scroll-margin-top:calc(var(--header-height) + 20px);padding-top:var(--header-height)}
 .hero{padding:6rem 0}
-.hero__inner{display:grid;grid-template-columns:1fr minmax(400px,400px);align-items:flex-start;gap:3rem}
+.hero__inner{display:grid;grid-template-columns:1fr minmax(400px,400px);align-items:center;gap:3rem}
 .hero__left{min-width:0}
 .hero__right{padding-top:0.5rem}
 .hero__title{font-size:3rem;margin:0;font-family:var(--font-heading);font-weight:700;line-height:1.15;letter-spacing:var(--letter-spacing-tight)}
@@ -44,7 +44,7 @@ section{scroll-margin-top:calc(var(--header-height) + 20px);padding-top:var(--he
 .hero__subtitle{color:#98a0b1;transition:opacity .3s ease;font-size:1.15rem;line-height:1.65;font-weight:400;letter-spacing:var(--letter-spacing-normal)}
 .hero__subtitle.fading{opacity:0.15}
 .hero__meta{margin:.8rem 0 1.2rem 0;color:#98a0b1;display:flex;gap:.6rem;align-items:center;font-size:0.95rem;font-weight:500}
-.hero__right{display:flex;justify-content:flex-end}
+.hero__right{display:flex;justify-content:flex-end;align-self:center}
 .hero__avatar-wrap{width:100%;max-width:400px;position:relative;display:inline-block}
 .hero__avatar{width:100%;border-radius:16px;box-shadow:0 14px 40px rgba(2,6,23,.6);transform-origin:center center;animation:avatar-breathe 8s ease-in-out infinite;transition:transform .36s cubic-bezier(.2,.9,.2,1)}
 @keyframes avatar-breathe{0%{transform:translateY(0) rotate(-1deg) scale(1)}50%{transform:translateY(-6px) rotate(1deg) scale(1.02)}100%{transform:translateY(0) rotate(-1deg) scale(1)}}
@@ -193,48 +193,6 @@ img.animate-on-scroll.animate-in{transform:translateY(0) scale(1)}
 @media (prefers-reduced-motion: reduce){
 	.animate-on-scroll{opacity:1 !important;transform:none !important;transition:none !important}
 }
-/* Compiled CSS (deliberately included so no build step is required) */
-*{box-sizing:border-box}
-html,body{height:100%}
-.container{max-width:1100px;margin:0 auto;padding:2rem}
-.skip-link{position:absolute;left:12px;top:12px;background:#071022;color:#fff;padding:.45rem .7rem;border-radius:6px;transform:translateY(-120%);transition:transform .18s ease;z-index:60;text-decoration:none}
-.skip-link:focus{transform:translateY(0%);outline:3px solid rgba(246,21,0,.12)}
-.site-header{background:transparent;position:sticky;top:0;z-index:40}
-.header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
-.brand__avatar{width:44px;height:44px;border-radius:8px}
-.hero{padding:6rem 0}
-.hero__inner{display:flex;align-items:center;gap:2rem}
-.hero__title{font-size:2.4rem;margin:0}
-.accent{color:#f61500}
-.hero__subtitle{color:#98a0b1}
-.hero__avatar{width:220px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
-.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,.06)}
-.btn--primary{background:linear-gradient(90deg,#f61500,#ff8a65);color:white;box-shadow:0 8px 20px rgba(246,21,0,.18)}
-.btn--outline{background:transparent;border:1px solid rgba(255,255,255,.06)}
-.btn--ghost{background:transparent;border:none}
-.projects__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-top:1.2rem}
-.project-card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));padding:1rem;border-radius:12px;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
-.project-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(2,6,23,.6)}
-.project-card__title{margin:0 0 .4rem 0;font-weight:600}
-.project-card__meta{color:#98a0b1;font-size:.9rem}
-.projects__controls{display:flex;justify-content:space-between;align-items:center;margin-top:1rem}
-.projects__filters{display:flex;gap:.5rem;flex-wrap:wrap}
-.modal__gallery{display:flex;gap:1rem;align-items:center;justify-content:center;margin-top:.8rem}
-.modal__gallery img{max-width:100%;height:auto;border-radius:8px;max-height:360px}
-.gallery__btn{background:rgba(255,255,255,.03);border:none;color:inherit;padding:.4rem .8rem;border-radius:6px;font-size:1.4rem;cursor:pointer}
-.contact__form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:720px}
-.contact__form label{display:flex;flex-direction:column;font-size:.95rem}
-.contact__form input,.contact__form textarea{margin-top:.4rem;padding:.6rem .8rem;border-radius:8px;border:1px solid rgba(255,255,255,.04);background:rgba(255,255,255,.02);color:inherit}
-.contact__form textarea{grid-column:1 / -1}
-:focus{outline:3px solid rgba(246,21,0,.12);outline-offset:2px}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);align-items:center;justify-content:center}
-.modal[aria-hidden="false"]{display:flex}
-.modal__content{background:#071022;padding:1.2rem;border-radius:12px;width:min(900px,95%);max-height:86vh;overflow:auto}
-.modal__close{background:transparent;border:none;font-size:1.2rem;position:absolute;right:1.4rem;top:1.2rem}
-.chips{list-style:none;padding:0;display:flex;gap:.5rem}
-.chips li{background:rgba(255,255,255,.03);padding:.4rem .6rem;border-radius:999px}
-.muted{color:#98a0b1}
 @media (max-width:800px){.hero__inner{flex-direction:column;text-align:center}.hero__avatar{width:160px}}
  
 .site-header{position:fixed;left:0;right:0;top:0;height:72px;background:rgba(11,18,32,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 2px 8px rgba(2,6,23,0.4);z-index:120}

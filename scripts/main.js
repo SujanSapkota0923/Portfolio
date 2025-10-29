@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
     const subtitle = document.getElementById('hero-subtitle');
     const yearsEl = document.getElementById('years-experience');
-    const startYear = 2018;
+    const startYear = 2025;
     const now = new Date().getFullYear();
     const years = Math.max(1, now - startYear);
     if (yearsEl) yearsEl.textContent = `${years}+ years experience`;
