@@ -2,15 +2,15 @@
 window.PROJECTS = [
   {
     id: 'p1',
-    title: 'Task Manager Pro',
+    title: 'NEPASHRYA',
     short: 'A real-time task organizer with team collaboration and offline sync.',
     long: 'Built a real-time task management platform using WebSockets, Node.js and Postgres. Features include optimistic UI, offline sync, presence indicators, role-based access, and keyboard-first accessibility. Reduced task creation time by 35% in user testing.',
     images: ['assets/images/project-1.svg','assets/images/project-1.svg'],
     tech: ['Node.js','Socket.IO','Postgres','Vanilla JS'],
     tags: ['web','realtime'],
     year: 2024,
-    live: '#',
-    repo: '#'
+    live: '#', // Live demo URL
+    repo: '#' // GitHub repo URL
   },
   {
     id: 'p2',
