@@ -26,6 +26,11 @@ body{font-family:var(--font-body);margin:0;background:linear-gradient(180deg,#07
 .section--shade{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));}
 .section--shade-light{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
 
+/* soft accent wash so each section reads as a surface */
+.section--wash{position:relative;overflow:hidden}
+.section--wash::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg, rgba(246,21,0,0.06) 0%, rgba(246,21,0,0.01) 100%);opacity:.18;pointer-events:none;z-index:0}
+.section--wash > *{position:relative;z-index:1}
+
 /* make sure anchored sections are not hidden behind the fixed header */
 section{scroll-margin-top:calc(var(--header-height) + 20px);padding-top:var(--header-height)}
 .hero{padding:6rem 0}
