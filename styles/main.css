@@ -21,6 +21,7 @@ body{font-family:var(--font-body);margin:0;background:linear-gradient(180deg,#07
 
 /* full height sections (account for fixed header) */
 .section--full{min-height:calc(100vh - var(--header-height));display:flex;align-items:center}
+.cv.section--full{min-height:auto;display:block;padding-top:calc(var(--header-height) * 0.6)}
 
 /* subtle section shading to distinguish areas */
 .section--shade{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));}
