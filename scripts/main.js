@@ -60,6 +60,106 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Mobile nav toggle: open/close overlay nav on small screens
+  const navToggle = document.getElementById('nav-toggle');
+  const navEl = document.querySelector('.nav');
+  // Helper to show/hide the nav toggle based on if the nav fits inline
+  function updateNavToggleVisibility() {
+    if (!navEl || !navToggle) return;
+    // If we're on the mobile breakpoint, always show the hamburger and keep the inline nav hidden.
+    const isMobileBp = window.matchMedia('(max-width:680px)').matches;
+    if (isMobileBp) {
+      navToggle.style.display = '';
+      navEl.style.display = 'none';
+      navEl.classList.remove('nav--open');
+      return;
+    }
+  // If nav is rendered inline but its content overflows horizontally OR wraps to multiple lines, show toggle
+  // Use scrollWidth vs clientWidth to detect horizontal overflow and scrollHeight vs clientHeight for wrapping
+  const isOverflowingHorizontally = navEl.scrollWidth > navEl.clientWidth + 1; // small buffer
+  const isWrapped = navEl.scrollHeight > navEl.clientHeight + 1; // wrapped to multiple lines
+  const isOverflowing = isOverflowingHorizontally || isWrapped;
+    if (isOverflowing) {
+      navToggle.style.display = '';
+      // hide inline nav so toggle controls it
+      navEl.classList.remove('nav--open');
+      navEl.style.display = 'none';
+    } else {
+      // nav fits — hide toggle and ensure nav is visible inline
+      navToggle.style.display = 'none';
+      navEl.style.display = 'flex';
+      navEl.classList.remove('nav--open');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.classList.remove('is-open');
+      navToggle.textContent = '☰';
+    }
+  }
+
+  // debounce helper
+  function debounce(fn, wait = 120) {
+    let t = null;
+    return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
+  }
+  if (navToggle && navEl) {
+    navToggle.addEventListener('click', (e) => {
+      const opened = navEl.classList.toggle('nav--open');
+      navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+      // toggle visual state on the button (hamburger -> X)
+      if (opened) {
+        navToggle.classList.add('is-open');
+        navToggle.textContent = '✕';
+        // ensure overlay is visible (remove any inline display:none set by detection)
+        navEl.style.display = 'flex';
+      } else {
+        navToggle.classList.remove('is-open');
+        navToggle.textContent = '☰';
+        // on mobile keep nav hidden when closed; on larger screens clear inline style
+        const isMobileBp = window.matchMedia('(max-width:680px)').matches;
+        if (isMobileBp) navEl.style.display = 'none'; else navEl.style.display = '';
+      }
+    });
+
+    // close nav when a nav-link is clicked (so it doesn't stay open and overlay the page)
+    navEl.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => {
+      if (navEl.classList.contains('nav--open')) {
+        navEl.classList.remove('nav--open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.classList.remove('is-open');
+        navToggle.textContent = '☰';
+        // hide overlay immediately on small screens
+        navEl.style.display = 'none';
+      }
+    }));
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navEl.classList.contains('nav--open')) {
+        navEl.classList.remove('nav--open');
+        navToggle.setAttribute('aria-expanded','false');
+        navEl.style.display = window.matchMedia('(max-width:680px)').matches ? 'none' : '';
+      }
+    });
+
+    // Close when clicking outside header (use capture to detect before other handlers)
+    document.addEventListener('click', (e) => {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      if (navEl.classList.contains('nav--open') && !header.contains(e.target)) {
+        navEl.classList.remove('nav--open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.classList.remove('is-open');
+        navToggle.textContent = '☰';
+        navEl.style.display = 'none';
+      }
+    }, true);
+  }
+
+  // Update nav toggle visibility on load and resize
+  const debouncedUpdate = debounce(updateNavToggleVisibility, 120);
+  window.addEventListener('resize', debouncedUpdate, { passive: true });
+  // run once after a short delay so CSS has applied and fonts/layout settled
+  setTimeout(updateNavToggleVisibility, 80);
+
   // update active nav item while scrolling
   function updateActiveNav(){
     const sections = ['home','projects','about','cv','contact'];
@@ -113,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // dynamic hero subtitle rotation and years of experience
   (function heroDynamic(){
-    const taglines = [
+  const taglines = [
       'I build delightful web experiences and robust back-end systems.',
       'Performance-focused web platforms and reliable APIs.',
       'Accessible interfaces, delightful interactions, solid engineering.'

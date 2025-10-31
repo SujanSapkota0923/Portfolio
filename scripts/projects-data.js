@@ -5,7 +5,7 @@ window.PROJECTS = [
     title: 'NEPASHRYA',
     short: 'A real-time task organizer with team collaboration and offline sync.',
     long: 'Built a real-time task management platform using WebSockets, Node.js and Postgres. Features include optimistic UI, offline sync, presence indicators, role-based access, and keyboard-first accessibility. Reduced task creation time by 35% in user testing.',
-    images: ['assets/images/project-1.svg','assets/images/project-1.svg'],
+    images: ['assets/images/Nepashrya.png','assets/images/project-1.svg'],
     tech: ['Node.js','Socket.IO','Postgres','Vanilla JS'],
     tags: ['web','realtime'],
     year: 2024,
@@ -14,15 +14,15 @@ window.PROJECTS = [
   },
   {
     id: 'p2',
-    title: 'Shoply (e‑commerce)',
-    short: 'Headless e‑commerce storefront with fast checkout flow and tests.',
-    long: 'Headless storefront built with a performant, cache-first product API and secure payments integration. Implemented an A/B tested checkout that improved conversion by 12% and reduced cart abandonment.',
-    images: ['assets/images/project-2.svg','assets/images/project-2.svg'],
-    tech: ['React','Stripe','Express'],
-    tags: ['web','commerce'],
-    year: 2023,
-    live: '#',
-    repo: '#'
+    title: 'URL Shortener',
+    short: 'Shorten and manage URLs with analytics and custom aliases.',
+    long: 'A simple and efficient URL shortener built with a focus on performance and usability. Features include link analytics, custom aliases, and a user-friendly interface.',
+    images: ['/assets/images/UrlShortner.png','assets/images/project-1.svg'],
+    tech: ['Django','MySQL','Bootstrap'],
+    tags: ['web','tools'],
+    year: 2025,
+    live: 'https://sujan23.pythonanywhere.com/',
+    repo: 'https://github.com/SujanSapkota0923/URL-Shortner.git'
   },
   {
     id: 'p3',
