@@ -1,5 +1,4 @@
-this is for testing purpose
-:# Portfolio — Static Site
+# Portfolio — Static Site
 
 Welcome to my portfolio repository. This static site showcases my projects, skills, and experience as a developer.
 
