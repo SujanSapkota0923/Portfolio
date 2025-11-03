@@ -17,7 +17,7 @@ window.PROJECTS = [
     title: 'URL Shortener',
     short: 'Shorten and manage URLs with analytics and custom aliases.',
     long: 'A simple and efficient URL shortener built with a focus on performance and usability. Features include link analytics, custom aliases, and a user-friendly interface.',
-    images: ['/assets/images/UrlShortner.png','assets/images/project-1.svg'],
+    images: ['assets/images/UrlShortner.png','assets/images/project-1.svg'],
     tech: ['Django','MySQL','HTML','Bootstrap'],
     tags: ['web','tools'],
     year: 2025,
