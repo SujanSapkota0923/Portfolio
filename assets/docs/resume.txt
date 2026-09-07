@@ -1,0 +1,182 @@
+================================================================================
+SUJAN SAPKOTA
+Computer Engineering Graduate
+Cloud Infrastructure | Networking | Information Systems
+================================================================================
+
++977 9867970707  ·  Chitwan, Nepal  ·  sujansapkota0923@gmail.com
+GitHub: github.com/SujanSapkota0923
+LinkedIn: linkedin.com/in/sujan-sapkota-a254a6215
+Portfolio: portfolio.sujansapkota07.com.np
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Computer Engineering graduate with practical experience in network
+administration, cloud infrastructure, SecOps, and enterprise IT operations.
+Proven technical background through hands-on roles as a Cloud & Infrastructure
+Engineer and Network Trainee at Kontract IT Support, complemented by network
+support training at Nepal Telecom and a DevOps & SecOps fellowship at Leapfrog
+Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes
+containerization, Terraform IaC, and zero-trust network security.
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+Bachelor of Engineering in Computer Engineering        April 2021 - June 2025
+Kathmandu Engineering College (KEC), Tribhuvan University, Kathmandu
+
+Higher Secondary Education - Science                   Jul 2018 - May 2020
+Trinity International College and Higher Secondary School, Kathmandu
+
+Secondary Education (SEE)                              Mar 2008 - Apr 2018
+New Oasis Academy Higher Secondary School, Baglung
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+System Administration   Linux Administration, Windows Administration, User
+                        Management, Access Control, Process Monitoring, System
+                        Troubleshooting
+
+Networking              TCP/IP, VLANs, Routing, Switching, Subnetting, DHCP,
+                        DNS, Cisco Packet Tracer, Network Troubleshooting
+
+Infrastructure &        Docker, Containerization, Virtual Machines, Load
+Virtualization          Balancing, Infrastructure Monitoring
+
+Cybersecurity           Vulnerability Assessment, Security Monitoring,
+                        Information Gathering, Burp Suite, Wireshark, Access
+                        Control, Security Best Practices
+
+Cloud & DevOps          AWS, GitHub Actions, CI/CD Pipelines, Automation,
+                        Terraform, Kubernetes, Infrastructure Deployment
+
+Databases & Storage     SQL, Redis, Database Administration, Backup and
+                        Recovery Concepts
+
+Programming             Python, C, C++, Bash Scripting
+
+Tools                   Git, GitHub, Postman, Linux CLI, Monitoring Tools
+
+Operating Systems       Linux, Windows, macOS
+
+Soft Skills             Technical Support, Incident Response, Problem Solving,
+                        Documentation, Communication, Team Leadership
+
+--------------------------------------------------------------------------------
+EXPERIENCE
+--------------------------------------------------------------------------------
+
+Cloud & Infrastructure Engineer                        February 2026 - Present
+Kontract IT Support
+  - Provision, configure, and maintain hybrid enterprise infrastructure
+    utilizing Linux/Windows servers and AWS cloud environments (VPC, EC2, RDS,
+    S3).
+  - Automate multi-environment infrastructure deployment using Infrastructure
+    as Code (Terraform) and setup CI/CD delivery pipelines with GitHub Actions.
+  - Manage containerized workload deployments, orchestration, and service
+    networking using Docker and Kubernetes clusters.
+  - Enforce network security using site-to-site IPsec VPNs, subnets, custom
+    routing, security groups, and AWS Web Application Firewall (WAF).
+  - Monitor system health, centralize logs, and implement automated threat
+    alerts using AWS CloudWatch, GuardDuty, and Security Hub.
+
+Network & Systems Trainee                       November 2025 - January 2026
+Kontract IT Support
+  - Assisted senior infrastructure engineers in managing local office network
+    hardware, routers, switches, VLANs, and firewall policies.
+  - Configured web and database servers on Linux environments, including Nginx
+    reverse proxy configuration, SSL setup, and DNS management.
+  - Handled user access control, IAM policies, and system administration under
+    direct supervision following organizational security practices.
+  - Conducted routine network monitoring, system health checks, and maintained
+    comprehensive infrastructure technical documentation.
+  - Gained hands-on exposure to cloud onboarding, subnetting, and foundational
+    security auditing practices.
+
+DevOps & SecOps Fellow                               June 2025 - August 2025
+Leapfrog Technology
+  - Completed hands-on training in DevOps, cloud infrastructure, Linux systems,
+    and security operations.
+  - Worked with containerized environments and deployment workflows using
+    Docker and CI/CD pipelines.
+  - Performed security assessments, reconnaissance, vulnerability
+    identification, and infrastructure hardening exercises.
+  - Monitored system performance and analyzed logs to identify operational and
+    security-related issues.
+  - Gained practical exposure to cloud-native infrastructure and operational
+    best practices.
+
+IT Intern - ISSD                              September 2024 - December 2024
+Nepal Telecom
+  - Assisted engineers in network monitoring, troubleshooting, and system
+    maintenance activities.
+  - Observed operation of enterprise-scale networking and telecommunication
+    infrastructure.
+  - Supported hardware and software troubleshooting tasks within the
+    department.
+  - Participated in routine maintenance and operational activities to ensure
+    service reliability.
+  - Gained practical exposure to enterprise IT support workflows and
+    infrastructure management.
+
+Website Administrator                                    May 2024 - July 2024
+Intel Institute - INTEL afterSEE
+  - Managed and maintained institutional web services and digital resources.
+  - Administered Moodle-based online examination and learning management
+    systems.
+  - Provided technical support to staff and students for platform-related
+    issues.
+  - Assisted in maintaining service availability and user access management.
+
+--------------------------------------------------------------------------------
+PERSONAL PROJECTS
+--------------------------------------------------------------------------------
+
+Nepashray - Django Social Platform Backend
+github.com/SujanSapkota0923/Nepashray
+  - Developed secure user authentication with login and email-based password
+    recovery.
+  - Built dynamic dashboards for monitoring likes/comments, managing posts, and
+    an admin panel for post verification.
+
+URL Shortener
+github.com/SujanSapkota0923/URL-Shortner
+  - Built a URL shortening service with customizable slugs, Base64-generated
+    keys, and automatic expiry support.
+  - Implemented high-performance storage using Redis and tracked detailed click
+    analytics for each shortened link.
+
+Hotel Booking Cancellation Prediction
+  - Trained a machine learning classification model to predict booking
+    cancellations using data preprocessing and feature engineering.
+  - Performed exploratory data analysis (EDA) and data visualization to
+    identify key cancellation drivers.
+
+--------------------------------------------------------------------------------
+CERTIFICATIONS
+--------------------------------------------------------------------------------
+Google Foundations of Cybersecurity - Coursera, 2023
+
+--------------------------------------------------------------------------------
+ACHIEVEMENTS
+--------------------------------------------------------------------------------
+President, KEC IT Club (2024/25)
+  Led organization of workshops and bootcamps covering Web3.0, GitHub, Data
+  Manipulation (NumPy, Pandas), Linux, and Open Source Contribution.
+
+1st Place, WISE BEE Hackathon (2023)
+  Won by developing a Hotel Booking Cancellation EDA and Prediction model.
+
+KIST HackFest 2024 - 48-Hour Hackathon
+  Built a computer vision web application for exercise pose analysis, rep
+  counting, feedback, and gamified leaderboards.
+
+PALS "Think Create Engineer" Program (2023)
+  Residential program at IIT Madras, India; developed an Airport Passenger
+  Feedback System as a final project.
+
+--------------------------------------------------------------------------------
+References available on request.
+================================================================================

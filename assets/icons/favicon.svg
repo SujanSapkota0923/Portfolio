@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Console mark: sharp corners, one accent, matching the site. -->
+  <rect width="64" height="64" fill="#141313"/>
+  <rect x="1.5" y="1.5" width="61" height="61" fill="none" stroke="#444748" stroke-width="3"/>
+
+  <!-- Prompt caret -->
+  <path d="M18 22l10 10-10 10" fill="none" stroke="#4ae176" stroke-width="5"
+        stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <!-- Cursor rule -->
+  <path d="M33 42h13" stroke="#e5e2e1" stroke-width="5" stroke-linecap="square"/>
+</svg>

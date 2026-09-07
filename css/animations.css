@@ -1,0 +1,58 @@
+/*
+ * The three keyframes the design actually uses. Nothing decorative that
+ * would fight the console look, and every one of them is suppressed by
+ * css/responsive.css when the visitor asks for reduced motion.
+ */
+
+/* The status beacon in the app bar — proof the page is live, not a graphic. */
+@keyframes beacon-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.beacon {
+  animation: beacon-pulse 2s ease-in-out infinite;
+}
+
+/* Block cursor at the end of the current log entry. */
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.caret {
+  animation: caret-blink 1.1s step-end infinite;
+  background: var(--secondary);
+  display: inline-block;
+  height: 0.9em;
+  margin-left: 4px;
+  vertical-align: text-bottom;
+  width: 0.5em;
+}
+
+/* Sections settle in once on first paint. */
+@keyframes section-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.section {
+  animation: section-in 0.4s ease both;
+}

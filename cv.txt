@@ -1,0 +1,254 @@
+%-------------------------
+% CV - Sujan Sapkota (Academic Application - Master of Applied IT)
+% Compiler: pdflatex or xelatex
+%-------------------------
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[left=1.2cm, right=1.2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% All links black, no colored borders
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section: bold, uppercase, with rule underneath
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}
+  [\titrule]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+%-------------------------
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Sujan Sapkota}} \\[6pt]
+    {\large \textbf{Computer Engineering Graduate}} \\[6pt]
+    {\textbf{Cloud Infrastructure | Networking | Information Systems}} \\[10pt]
+    
+    +977 9867970707 \quad $\cdot$ \quad Chitwan, Nepal \quad $\cdot$ \quad \href{mailto:sujansapkota0923@gmail.com}{sujansapkota0923@gmail.com} \\[6pt]
+    
+    % \href{https://www.linkedin.com/in/sujan-sapkota-a254a6215/}{LinkedIn} \quad $\cdot$ \quad 
+    % \href{https://portfolio.sujansapkota07.com.np/}{Portfolio} \quad $\cdot$ \quad 
+    % \href{https://github.com/SujanSapkota0923}{GitHub}
+\end{center}
+
+%--- SUMMARY ---%
+\section{Summary}
+Computer Engineering graduate with practical experience in network administration, cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background through hands-on roles as a Cloud \& Infrastructure Engineer and Network Trainee at Kontract IT Support, complemented by network support training at Nepal Telecom and a DevOps \& SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network security.
+%--- EDUCATION ---%
+\section{Education}
+
+\noindent\textbf{Bachelor of Engineering in Computer Engineering} \hfill \textbf{April 2021 - June 2025}\\
+Kathmandu Engineering College (KEC), Tribhuvan University, Kathmandu
+
+\vspace{5pt}
+\noindent\textbf{Higher Secondary Education --- Science} \hfill \textbf{Jul 2018 -- May 2020}\\
+Trinity International College and Higher Secondary School, Kathmandu
+
+\vspace{5pt}
+\noindent\textbf{Secondary Education (SEE)} \hfill \textbf{Mar 2008 -- Apr 2018}\\
+New Oasis Academy Higher Secondary School, Baglung
+
+
+%--- TECHNICAL SKILLS ---%
+\section{Technical Skills}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+\textbf{System Administration} &
+Linux Administration, Windows Administration, User Management, Access Control, Process Monitoring, System Troubleshooting \\
+
+\textbf{Networking} &
+TCP/IP, VLANs, Routing, Switching, Subnetting, DHCP, DNS, Cisco Packet Tracer, Network Troubleshooting \\
+
+\textbf{Infrastructure \& Virtualization} &
+Docker, Containerization, Virtual Machines, Load Balancing, Infrastructure Monitoring \\
+
+\textbf{Cybersecurity} &
+Vulnerability Assessment, Security Monitoring, Information Gathering, Burp Suite, Wireshark, Access Control, Security Best Practices \\
+
+\textbf{Cloud \& DevOps} &
+AWS, GitHub Actions, CI/CD Pipelines, Automation, Terraform, Kubernetes, Infrastructure Deployment \\
+
+\textbf{Databases \& Storage} &
+SQL, Redis, Database Administration, Backup and Recovery Concepts \\
+
+\textbf{Programming} &
+Python, C, C++, Bash Scripting \\
+
+\textbf{Tools} &
+Git, GitHub, Postman, Linux CLI, Monitoring Tools \\
+
+\textbf{Operating Systems} &
+Linux, Windows, macOS \\
+
+\textbf{Soft Skills} &
+Technical Support, Incident Response, Problem Solving, Documentation, Communication, Team Leadership
+\end{tabularx}
+\renewcommand{\arraystretch}{1}
+%--- EXPERIENCE ---%
+\section{Experience}
+\vspace{5pt}
+
+\noindent\textbf{Kontract IT Support} \quad
+\href{https://drive.google.com/file/d/1F96JQmBjthRLw-j9MLyEQtXuyabaPjdj/view?usp=sharing}{[Certificate]}
+\hfill
+\textit{Cloud \& Infrastructure Engineer}
+
+\textit{February 2026 -- Present}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+\item Provision, configure, and maintain hybrid enterprise infrastructure utilizing Linux/Windows servers and AWS cloud environments (VPC, EC2, RDS, S3).
+\item Automate multi-environment infrastructure deployment using Infrastructure as Code (Terraform) and setup CI/CD delivery pipelines with GitHub Actions.
+\item Manage containerized workload deployments, orchestration, and service networking using Docker and Kubernetes clusters.
+\item Enforce network security using site-to-site IPsec VPNs, subnets, custom routing, security groups, and AWS Web Application Firewall (WAF).
+\item Monitor system health, centralize logs, and implement automated threat alerts using AWS CloudWatch, GuardDuty, and Security Hub.
+\end{itemize}
+
+\vspace{5pt}
+
+\noindent\textbf{Kontract IT Support} \quad
+\href{https://drive.google.com/file/d/1F96JQmBjthRLw-j9MLyEQtXuyabaPjdj/view?usp=sharing}{[Certificate]}
+\hfill
+\textit{Network \& Systems Trainee}
+
+\textit{November 2025 -- January 2026}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+\item Assisted senior infrastructure engineers in managing local office network hardware, routers, switches, VLANs, and firewall policies.
+\item Configured web and database servers on Linux environments, including Nginx reverse proxy configuration, SSL setup, and DNS management.
+\item Handled user access control, IAM policies, and system administration under direct supervision following organizational security practices.
+\item Conducted routine network monitoring, system health checks, and maintained comprehensive infrastructure technical documentation.
+\item Gained hands-on exposure to cloud onboarding, subnetting, and foundational security auditing practices.
+\end{itemize}
+\vspace{5pt}
+
+\noindent\textbf{Leapfrog Technology}
+\quad
+\href{https://drive.google.com/file/d/1F96JQmBjthRLw-j9MLyEQtXuyabaPjdj/view?usp=sharing}{[Certificate]}
+\hfill
+\textit{DevOps \& SecOps Fellow}
+
+\textit{June 2025 -- August 2025}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+
+\item Completed hands-on training in DevOps, cloud infrastructure, Linux systems, and security operations.
+
+\item Worked with containerized environments and deployment workflows using Docker and CI/CD pipelines.
+
+\item Performed security assessments, reconnaissance, vulnerability identification, and infrastructure hardening exercises.
+
+\item Monitored system performance and analyzed logs to identify operational and security-related issues.
+
+\item Gained practical exposure to cloud-native infrastructure and operational best practices.
+
+\end{itemize}
+
+
+\noindent\textbf{Nepal Telecom}
+\quad
+\href{https://drive.google.com/file/d/1sZaCKBh4J0S1284tuQ8IXygZb7G7J9SF/view}{[Certificate]}
+\hfill
+\textit{IT Intern --- ISSD}
+
+\textit{September 2024 -- December 2024}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+
+\item Assisted engineers in network monitoring, troubleshooting, and system maintenance activities.
+
+\item Observed operation of enterprise-scale networking and telecommunication infrastructure.
+
+\item Supported hardware and software troubleshooting tasks within the department.
+
+\item Participated in routine maintenance and operational activities to ensure service reliability.
+
+\item Gained practical exposure to enterprise IT support workflows and infrastructure management.
+
+\end{itemize}
+
+\vspace{5pt}
+
+\noindent\textbf{Intel Institute --- INTEL afterSEE}
+\quad
+\href{https://drive.google.com/file/d/1Uy0Gor8fM9N5ZPq6y57QJCkEIRNpJEFH/view}{[Certificate]}
+\hfill
+\textit{Website Administrator}
+
+\textit{May 2024 -- July 2024}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+
+\item Managed and maintained institutional web services and digital resources.
+
+\item Administered Moodle-based online examination and learning management systems.
+
+\item Provided technical support to staff and students for platform-related issues.
+
+\item Assisted in maintaining service availability and user access management.
+
+\end{itemize}
+%--- PERSONAL PROJECTS ---%
+\section{Personal Projects}
+
+\noindent\textbf{Nepashray --- Django Social Platform Backend}
+\quad \href{https://github.com/SujanSapkota0923/Nepashray}{[GitHub]}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+    \item Developed secure user authentication with login and email-based password recovery.
+    \item Built dynamic dashboards for monitoring likes/comments, managing posts, and an admin panel for post verification.
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{URL Shortener}
+\quad \href{https://github.com/SujanSapkota0923/URL-Shortner}{[GitHub]}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+    \item Built a URL shortening service with customizable slugs, Base64-generated keys, and automatic expiry support.
+    \item Implemented high-performance storage using Redis and tracked detailed click analytics for each shortened link.
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Hotel Booking Cancellation Prediction}
+\begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]
+    \item Trained a machine learning classification model to predict booking cancellations using data preprocessing and feature engineering.
+    \item Performed exploratory data analysis (EDA) and data visualization to identify key cancellation drivers.
+\end{itemize}
+
+%--- CERTIFICATIONS ---%
+\section{Certifications}
+\begin{itemize}[leftmargin=*, nosep, itemsep=4pt]
+    \item \textbf{Google Foundations of Cybersecurity} --- Coursera, 2023 \quad \href{https://drive.google.com/file/d/13wj_gjK9jXjYmwBrA_Q3SbeBkoxaTqIO/view}{[Certificate]}
+\end{itemize}
+
+%--- ACHIEVEMENTS ---%
+\section{Achievements}
+\begin{itemize}[leftmargin=*, nosep, itemsep=4pt]
+    \item \textbf{President, KEC IT Club (2024/25)} \href{https://drive.google.com/file/d/13r5yJacxx-IR8LDaIiPgNrrIEfd5MIzI/view}{[Link]}: Led organization of workshops and bootcamps covering Web3.0, GitHub, Data Manipulation (NumPy, Pandas), Linux, and Open Source Contribution.
+    \item \textbf{1st Place, WISE BEE Hackathon (2023)} \href{https://drive.google.com/file/d/17TPaiENQqQmE94FujXF-w6Xb_zk1Jky6/view}{[Link]}: Won by developing a Hotel Booking Cancellation EDA and Prediction model.
+    \item \textbf{KIST HackFest 2024 --- 48-Hour Hackathon} \href{https://drive.google.com/file/d/16wxdtSeUgTNbisp3y1CQox3JYVSNQUPV/view?usp=sharing}{[Link]}: Built a computer vision web application for exercise pose analysis, rep counting, feedback, and gamified leaderboards.
+    \item \textbf{PALS ``Think Create Engineer'' Program (2023)} \href{https://drive.google.com/file/d/14Dyliz4dNH3cUoo-op77dvMvccceR0Kh/view}{[Link]}: Residential program at IIT Madras, India; developed an Airport Passenger Feedback System as a final project.
+\end{itemize}
+
+%--- REFERENCES ---%
+\section{References}
+\noindent
+\textbf{Kamal gaire} \\
+Co-founder and CTO of XOR Solution\\
+Chitwan, Nepal \\
+\href{mailto:kamalgaire@hotmail.com}{kamalgaire@hotmail.com} \\
++977 9855020004
+\end{document}
