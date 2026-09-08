@@ -44,7 +44,7 @@
     {\large \textbf{Computer Engineering Graduate}} \\[6pt]
     {\textbf{Cloud Infrastructure | Networking | Information Systems}} \\[10pt]
     
-    +977 9867970707 \quad $\cdot$ \quad Chitwan, Nepal \quad $\cdot$ \quad \href{mailto:sujansapkota0923@gmail.com}{sujansapkota0923@gmail.com} \\[6pt]
+    +977 9867970707 \quad $\cdot$ \quad Kathmandu, Nepal \quad $\cdot$ \quad \href{mailto:sujansapkota0923@gmail.com}{sujansapkota0923@gmail.com} \\[6pt]
     
     % \href{https://www.linkedin.com/in/sujan-sapkota-a254a6215/}{LinkedIn} \quad $\cdot$ \quad 
     % \href{https://portfolio.sujansapkota07.com.np/}{Portfolio} \quad $\cdot$ \quad 
@@ -53,7 +53,7 @@
 
 %--- SUMMARY ---%
 \section{Summary}
-Computer Engineering graduate with practical experience in network administration, cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background through hands-on roles as a Cloud \& Infrastructure Engineer and Network Trainee at Kontract IT Support, complemented by network support training at Nepal Telecom and a DevOps \& SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network security.
+Computer Engineering graduate with practical experience in network administration, cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background through hands-on roles as a Junior Cloud \& Infrastructure Engineer and Network Trainee at Kontract IT Support, complemented by network support training at Nepal Telecom and a DevOps \& SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network security.
 %--- EDUCATION ---%
 \section{Education}
 
@@ -112,7 +112,7 @@ Technical Support, Incident Response, Problem Solving, Documentation, Communicat
 \noindent\textbf{Kontract IT Support} \quad
 \href{https://drive.google.com/file/d/1F96JQmBjthRLw-j9MLyEQtXuyabaPjdj/view?usp=sharing}{[Certificate]}
 \hfill
-\textit{Cloud \& Infrastructure Engineer}
+\textit{Junior Cloud \& Infrastructure Engineer}
 
 \textit{February 2026 -- Present}
 \begin{itemize}[nosep, topsep=2pt, leftmargin=2em, itemsep=2pt]

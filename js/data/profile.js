@@ -15,10 +15,11 @@ export const profile = {
   role: 'Junior Cloud & Infrastructure Engineer',
   employer: 'Kontract IT Support',
   focus: 'Cloud Infrastructure | Networking | Information Systems',
-  location: 'Chitwan, Nepal',
+  location: 'Kathmandu, Nepal',
+  hometown: 'Baglung, Nepal',
   timezone: 'UTC+5:45',
   summary:
-    'Computer Engineering graduate with practical experience in network administration, cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background through hands-on roles as a Cloud & Infrastructure Engineer and Network Trainee at Kontract IT Support, complemented by network support training at Nepal Telecom and a DevOps & SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network security.',
+    'Computer Engineering graduate with practical experience in network administration, cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background through hands-on roles as a Junior Cloud & Infrastructure Engineer and Network Trainee at Kontract IT Support, complemented by network support training at Nepal Telecom and a DevOps & SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network security.',
   contact: {
     email: 'sujansapkota0923@gmail.com',
     phone: '+977 9867970707',
@@ -34,10 +35,10 @@ export const profile = {
 export const heroObject = {
   engineer: {
     name: 'Sujan Sapkota',
-    role: 'Cloud & Infrastructure Engineer',
+    role: 'Junior Cloud & Infrastructure Engineer',
     employer: 'Kontract IT Support',
     education: 'BE Computer Engineering, KEC (TU) — 2025',
-    location: 'Chitwan, Nepal',
+    location: 'Kathmandu, Nepal',
     stack: ['Linux', 'AWS', 'Terraform', 'Docker', 'Kubernetes', 'Python', 'Bash'],
     focus: ['Hybrid infrastructure', 'Zero-trust networking', 'SecOps']
   }
@@ -258,7 +259,7 @@ export const timeline = [
     period: 'February 2026 — Present',
     stamp: '2026-02',
     org: 'Kontract IT Support',
-    role: 'Cloud & Infrastructure Engineer',
+    role: 'Junior Cloud & Infrastructure Engineer',
     current: true,
     summary:
       'Provisioning and running hybrid Linux/Windows and AWS infrastructure, automated with Terraform and GitHub Actions.',
@@ -418,6 +419,60 @@ export const certifications = [
   }
 ];
 
+/**
+ * Writing — my own notes, how-tos, and papers.
+ *
+ * This is the one section that is not transcribed from cv.txt: it is where a
+ * write-up goes when I have finished one, and it is the only place on the site
+ * that grows without the CV changing. Same honesty rule applies — an entry
+ * goes in after the piece exists, not while it is still an intention.
+ *
+ * Entry shape (only `kind`, `title`, and `summary` are required):
+ *
+ *   {
+ *     kind:      'note' | 'guide' | 'paper',   // drives the badge and the icon
+ *     title:     'Running a pod without kubectl run',
+ *     summary:   'One or two sentences on what the piece actually answers.',
+ *     date:      'Mar 2026',                   // omit while unpublished
+ *     venue:     'IEEE ...',                   // papers only; omit otherwise
+ *     tags:      ['Kubernetes', 'YAML'],
+ *     link:      'https://...',                // omit for an unpublished draft
+ *     linkLabel: 'Read'                        // defaults to 'Read' / 'PDF'
+ *   }
+ *
+ * `entries` renders newest-first in the order written here, so add new pieces
+ * at the top. With the array empty the section renders its placeholder panel
+ * instead of a blank grid.
+ */
+export const writing = {
+  intro:
+    'Whenever I work something out at the terminal — a GitHub Actions workflow that finally does what I meant, the difference between a pod and the Deployment that owns it — I write it down so the next person (usually me, six months later) does not have to work it out twice. Notes and how-tos land here, and so do academic papers.',
+  empty: [
+    '~/notes $ ls -la',
+    'total 0',
+    '',
+    'Nothing published here yet. The pieces I have written so far live in my',
+    'own notes rather than on a page — they go up here as I clean them up,',
+    'and this box disappears the moment the first one lands.',
+    '',
+    'Want one in particular? Ask me for it: [[sujansapkota0923@gmail.com]]'
+  ],
+  entries: [
+    // Add entries here, newest first. Example — delete this comment and
+    // uncomment the object once the piece is actually written:
+    //
+    // {
+    //   kind: 'guide',
+    //   title: 'A GitHub Actions workflow that deploys with Terraform',
+    //   summary:
+    //     'What plan/apply looks like inside a workflow, where the AWS credentials come from, and why the apply job is gated on an environment.',
+    //   date: 'Mar 2026',
+    //   tags: ['GitHub Actions', 'Terraform', 'CI/CD'],
+    //   link: 'https://...'
+    // }
+  ]
+};
+
 export const achievements = [
   {
     title: 'President, KEC IT Club',
@@ -459,7 +514,7 @@ export const achievements = [
  */
 export const infrastructure = {
   intro:
-    'The stack below is the one described in my current role: hybrid Linux/Windows servers alongside AWS, provisioned as code, with the network locked down and everything logged. Click a node to read why it is there.',
+    'Every box below is a resource I actually run at Kontract IT Support — `terraform state list` prints this same inventory from the state file, minus the drawing. They are stacked the way a request moves through them: delivery first, then the network edge, compute, data, and the observability and security services that watch all of it. Click a node to read what it does and why it is there.',
   nodes: [
     {
       id: 'github',

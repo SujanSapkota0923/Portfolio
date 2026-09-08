@@ -1,11 +1,13 @@
 # Sujan Sapkota — Portfolio Console
 
-A static portfolio for **Sujan Sapkota**, Computer Engineering graduate and Cloud &
-Infrastructure Engineer at Kontract IT Support.
+A static portfolio for **Sujan Sapkota**, Computer Engineering graduate and Junior
+Cloud & Infrastructure Engineer at Kontract IT Support.
 
 Console/terminal visual language, no build step, no backend, no tracking.
 Everything on the page is transcribed from `cv.txt` — if a claim is not on the CV,
-it is not on the site.
+it is not on the site. The one exception is the writing section (`ls ~/notes/`),
+which holds Sujan's own notes, how-tos, and papers and therefore grows without
+the CV changing.
 
 The visual design is the one from `../portfoli.html`: JetBrains Mono throughout,
 square one-pixel frames, uppercase label caps at 0.1em tracking, a single accent
@@ -48,6 +50,7 @@ edit — you should not need to touch markup.
 | `skills` | the ten skill groups |
 | `projects` | project cards, including each card's `schematic` |
 | `certifications` | certification list |
+| `writing` | the writing section: notes, how-tos, papers |
 | `achievements` | achievements section |
 | `infrastructure` | diagram nodes and the inspector copy |
 | `philosophy` | the About section prose |
@@ -60,6 +63,32 @@ project's own CV bullets, rendered in the framed box where the original design
 put a screenshot. Wrap a fragment in `[[double brackets]]` to paint it in the
 accent colour. There is no honest screenshot of any of these projects, so the
 drawing stands in for one.
+
+### Adding a piece of writing
+
+`ls ~/notes/` is the section for write-ups — a how-to on GitHub Actions, a note on
+what a Kubernetes pod really is, a research paper. Add an object to
+`writing.entries` in `js/data/profile.js`, newest first:
+
+```js
+{
+  kind: 'guide',                 // 'note' | 'guide' | 'paper' — sets badge + icon
+  title: 'Creating pods without kubectl run',
+  summary: 'One or two sentences on what the piece actually answers.',
+  date: 'Mar 2026',              // omit while it is still unpublished
+  venue: 'Journal / conference', // papers only
+  tags: ['Kubernetes', 'YAML'],
+  link: 'https://…',             // omit and the card shows "Draft — not published yet"
+  linkLabel: 'Read'              // defaults to Read, or PDF for a paper
+}
+```
+
+With `entries` empty the section renders `writing.empty` — a framed panel that
+says nothing is published yet — rather than a blank grid. The `[[…]]` accent
+markers work in those lines, exactly as they do in a project schematic. The CLI
+reads the same data: `notes` lists the entries, or says the shelf is empty.
+
+Same honesty rule as everywhere else: an entry goes in once the piece exists.
 
 Timeline entries marked `undated: true` are real but carry only a duration on the
 CV. They render with the duration in place of a date rather than with a guessed
@@ -95,8 +124,8 @@ base-14 fonts (no LaTeX required, ~6KB output, two A4 pages). Keep it, `resume.t
 | Boot screen | any key or click skips it |
 
 CLI commands: `help`, `whoami`, `cat resume.txt`, `ls`, `cd <section>`, `stack`,
-`skills`, `projects`, `contact`, `status`, `theme`, `ping`, `date`, `history`,
-`echo`, `clear`, `exit`. Tab completes; ↑/↓ walks history.
+`skills`, `projects`, `notes`, `contact`, `status`, `theme`, `ping`, `date`,
+`history`, `echo`, `clear`, `exit`. Tab completes; ↑/↓ walks history.
 
 `status` and `ping` report real measurements (navigation timing, and four
 cache-busted same-origin requests) rather than invented figures.
@@ -186,7 +215,7 @@ variant.
 
 ---
 
-**Sujan Sapkota** · Chitwan, Nepal ·
+**Sujan Sapkota** · Kathmandu, Nepal ·
 [sujansapkota0923@gmail.com](mailto:sujansapkota0923@gmail.com) ·
 [GitHub](https://github.com/SujanSapkota0923) ·
 [LinkedIn](https://www.linkedin.com/in/sujan-sapkota-a254a6215/)

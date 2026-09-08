@@ -15,6 +15,7 @@ import {
   skills,
   projects,
   certifications,
+  writing,
   achievements,
   infrastructure,
   philosophy
@@ -211,15 +212,15 @@ function renderSkills() {
  * bullets describe. `[[...]]` in the data marks an accent-coloured segment —
  * a delimiter that cannot collide with the `-->` arrows in the drawings.
  */
+function markAccent(line) {
+  return esc(line).replace(
+    /\[\[(.+?)\]\]/g,
+    (_, inner) => `<span class="s-accent">${inner}</span>`
+  );
+}
+
 function renderSchematic(lines) {
-  const body = lines
-    .map((line) =>
-      esc(line).replace(
-        /\[\[(.+?)\]\]/g,
-        (_, inner) => `<span class="s-accent">${inner}</span>`
-      )
-    )
-    .join('\n');
+  const body = lines.map(markAccent).join('\n');
 
   return `<pre class="project-schematic" aria-hidden="true">${body}</pre>`;
 }
@@ -261,6 +262,72 @@ function renderProjects() {
         </div>
       </article>`
     )
+    .join('');
+}
+
+/* ------------------------------------------------------------- writing --- */
+
+/**
+ * Notes, how-tos, and papers. Unlike every other section this one is not
+ * transcribed from the CV, so it can legitimately be empty — and when it is,
+ * an empty grid would read as a broken page. The placeholder panel says
+ * plainly that nothing is published yet rather than leaving a hole.
+ */
+const WRITING_KINDS = {
+  note: { label: 'note', icon: 'sticky_note_2', linkLabel: 'Read' },
+  guide: { label: 'how-to', icon: 'menu_book', linkLabel: 'Read' },
+  paper: { label: 'paper', icon: 'science', linkLabel: 'PDF' }
+};
+
+function renderWriting() {
+  const intro = mount('writing-intro');
+  if (intro) intro.textContent = writing.intro;
+
+  const el = mount('writing-grid');
+  if (!el) return;
+
+  if (!writing.entries.length) {
+    el.classList.add('is-empty');
+    el.innerHTML = `<pre class="writing-empty">${writing.empty
+      .map(markAccent)
+      .join('\n')}</pre>`;
+    return;
+  }
+
+  el.classList.remove('is-empty');
+  el.innerHTML = writing.entries
+    .map((w) => {
+      const kind = WRITING_KINDS[w.kind] || WRITING_KINDS.note;
+
+      const tags = (w.tags || []).length
+        ? `<div class="writing-tags">${w.tags
+            .map((tag) => `<span class="badge">${esc(tag)}</span>`)
+            .join('')}</div>`
+        : '';
+
+      const venue = w.venue ? `<div class="writing-venue">${esc(w.venue)}</div>` : '';
+
+      const foot = w.link
+        ? `<a class="writing-link" href="${esc(w.link)}" target="_blank" rel="noopener">
+             ${icon('open_in_new')} ${esc(w.linkLabel || kind.linkLabel)}
+           </a>`
+        : `<span class="writing-link is-disabled" title="Written, not published yet">
+             ${icon('edit_note')} Draft — not published yet
+           </span>`;
+
+      return `
+      <article class="writing-card">
+        <div class="writing-head">
+          <span class="writing-kind">${icon(kind.icon)} ${esc(kind.label)}</span>
+          <span class="writing-date">${esc(w.date || 'unpublished')}</span>
+        </div>
+        <h3 class="writing-title">${esc(w.title)}</h3>
+        ${venue}
+        <p class="writing-summary">${esc(w.summary)}</p>
+        ${tags}
+        ${foot}
+      </article>`;
+    })
     .join('');
 }
 
@@ -476,6 +543,7 @@ export function renderAll() {
     ['projects', renderProjects],
     ['achievements', renderAchievements],
     ['certifications', renderCertifications],
+    ['writing', renderWriting],
     ['philosophy', renderPhilosophy],
     ['infrastructure', renderInfrastructure],
     ['contact', renderContact]

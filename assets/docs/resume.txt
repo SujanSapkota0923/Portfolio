@@ -4,7 +4,7 @@ Computer Engineering Graduate
 Cloud Infrastructure | Networking | Information Systems
 ================================================================================
 
-+977 9867970707  ·  Chitwan, Nepal  ·  sujansapkota0923@gmail.com
++977 9867970707  ·  Kathmandu, Nepal  ·  sujansapkota0923@gmail.com
 GitHub: github.com/SujanSapkota0923
 LinkedIn: linkedin.com/in/sujan-sapkota-a254a6215
 Portfolio: portfolio.sujansapkota07.com.np
@@ -14,11 +14,12 @@ SUMMARY
 --------------------------------------------------------------------------------
 Computer Engineering graduate with practical experience in network
 administration, cloud infrastructure, SecOps, and enterprise IT operations.
-Proven technical background through hands-on roles as a Cloud & Infrastructure
-Engineer and Network Trainee at Kontract IT Support, complemented by network
-support training at Nepal Telecom and a DevOps & SecOps fellowship at Leapfrog
-Technology. Skilled in managing AWS multi-region environments, Docker/Kubernetes
-containerization, Terraform IaC, and zero-trust network security.
+Proven technical background through hands-on roles as a Junior Cloud &
+Infrastructure Engineer and Network Trainee at Kontract IT Support,
+complemented by network support training at Nepal Telecom and a DevOps &
+SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region
+environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust
+network security.
 
 --------------------------------------------------------------------------------
 EDUCATION
@@ -68,7 +69,7 @@ Soft Skills             Technical Support, Incident Response, Problem Solving,
 EXPERIENCE
 --------------------------------------------------------------------------------
 
-Cloud & Infrastructure Engineer                        February 2026 - Present
+Junior Cloud & Infrastructure Engineer                   February 2026 - Present
 Kontract IT Support
   - Provision, configure, and maintain hybrid enterprise infrastructure
     utilizing Linux/Windows servers and AWS cloud environments (VPC, EC2, RDS,

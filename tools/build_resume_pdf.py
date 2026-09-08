@@ -240,7 +240,7 @@ class Pdf:
 
 # ------------------------------------------------------------------- content --
 
-CONTACT = "+977 9867970707  |  Chitwan, Nepal  |  sujansapkota0923@gmail.com"
+CONTACT = "+977 9867970707  |  Kathmandu, Nepal  |  sujansapkota0923@gmail.com"
 LINKS = (
     "github.com/SujanSapkota0923  |  "
     "linkedin.com/in/sujan-sapkota-a254a6215  |  "
@@ -250,7 +250,7 @@ LINKS = (
 SUMMARY = (
     "Computer Engineering graduate with practical experience in network administration, "
     "cloud infrastructure, SecOps, and enterprise IT operations. Proven technical background "
-    "through hands-on roles as a Cloud & Infrastructure Engineer and Network Trainee at "
+    "through hands-on roles as a Junior Cloud & Infrastructure Engineer and Network Trainee at "
     "Kontract IT Support, complemented by network support training at Nepal Telecom and a "
     "DevOps & SecOps fellowship at Leapfrog Technology. Skilled in managing AWS multi-region "
     "environments, Docker/Kubernetes containerization, Terraform IaC, and zero-trust network "
@@ -290,7 +290,7 @@ SKILLS = [
 
 EXPERIENCE = [
     (
-        "Cloud & Infrastructure Engineer",
+        "Junior Cloud & Infrastructure Engineer",
         "February 2026 - Present",
         "Kontract IT Support",
         [

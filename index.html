@@ -6,7 +6,7 @@
     <title>Sujan Sapkota | Portfolio Console</title>
     <meta
       name="description"
-      content="Sujan Sapkota — Computer Engineering graduate and Cloud &amp; Infrastructure Engineer at Kontract IT Support. Hybrid Linux/Windows and AWS infrastructure, Terraform, Docker/Kubernetes, network security."
+      content="Sujan Sapkota — Computer Engineering graduate and Junior Cloud &amp; Infrastructure Engineer at Kontract IT Support. Hybrid Linux/Windows and AWS infrastructure, Terraform, Docker/Kubernetes, network security."
     />
     <link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml" />
 
@@ -310,6 +310,7 @@
         <a class="nav-link" href="#experience"><span>&gt;</span> GET /log</a>
         <a class="nav-link" href="#skills"><span>&gt;</span> GET /skills</a>
         <a class="nav-link" href="#projects"><span>&gt;</span> GET /projects</a>
+        <a class="nav-link" href="#writing"><span>&gt;</span> GET /notes</a>
         <a class="nav-link" href="#achievements"
           ><span>&gt;</span> GET /awards</a
         >
@@ -340,7 +341,7 @@
               <span class="material-symbols-outlined text-[14px]"
                 >location_on</span
               >
-              <span data-profile="location">Chitwan, Nepal</span>
+              <span data-profile="location">Kathmandu, Nepal</span>
               <span class="text-outline">·</span> UTC+5:45
             </div>
 
@@ -358,7 +359,7 @@
               class="font-headline-md text-headline-md text-on-surface-variant mb-2 flex items-start gap-2"
             >
               <span class="material-symbols-outlined mt-1">cloud</span>
-              <span data-profile="role">Cloud &amp; Infrastructure Engineer</span>
+              <span data-profile="role">Junior Cloud &amp; Infrastructure Engineer</span>
             </h2>
 
             <div
@@ -434,11 +435,12 @@
               class="font-code-block text-code-block text-on-surface-variant whitespace-pre-wrap"
             >uid=1000(sujan) gid=1000(engineering)
 groups=cloud,network,secops,linux
+pwd=Kathmandu, Nepal (UTC+5:45)   home=Baglung, Nepal
 
 Bachelor of Engineering, Computer Engineering
 Kathmandu Engineering College (TU), 2021 — 2025
 
-Currently  Cloud &amp; Infrastructure Engineer
+Currently  Junior Cloud &amp; Infrastructure Engineer
            Kontract IT Support, Feb 2026 — present
 
 Previously Network &amp; Systems Trainee, Kontract
@@ -453,7 +455,7 @@ Previously Network &amp; Systems Trainee, Kontract
           class="font-headline-md text-headline-md text-primary mb-4 border-b border-outline pb-4 flex items-center gap-2"
         >
           <span class="material-symbols-outlined">account_tree</span>
-          terraform graph
+          terraform state list
         </h4>
         <p
           class="font-body-sm text-body-sm text-on-surface-variant mb-8 max-w-3xl"
@@ -558,6 +560,26 @@ Previously Network &amp; Systems Trainee, Kontract
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-8"
           id="projects-grid"
+        ></div>
+      </section>
+
+      <!-- ═════════════════════════════════════════════════ writing ══════ -->
+      <section class="section mb-24" id="writing">
+        <h3
+          class="section-head font-headline-md text-headline-md text-primary mb-8 border-b border-outline pb-4 flex items-center gap-2"
+        >
+          <span class="material-symbols-outlined">article</span>
+          ls ~/notes/
+        </h3>
+
+        <p
+          class="font-body-sm text-body-sm text-on-surface-variant mb-8 max-w-3xl"
+          id="writing-intro"
+        ></p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-px border border-outline"
+          id="writing-grid"
         ></div>
       </section>
 
@@ -740,6 +762,11 @@ No entry is simulated to make the page look busier.</pre>
           GET /STATUS: OPERATIONAL
         </div>
         <nav class="flex flex-wrap justify-center gap-6">
+          <a
+            class="font-label-caps text-label-caps text-on-tertiary-container hover:text-primary hover:underline transition-all"
+            href="#writing"
+            >NOTES</a
+          >
           <a
             class="font-label-caps text-label-caps text-on-tertiary-container hover:text-primary hover:underline transition-all"
             href="#achievements"

@@ -19,6 +19,7 @@ const SECTIONS = [
   ['#experience', 'Life timeline', 'history'],
   ['#skills', 'Technical skills', 'memory'],
   ['#projects', 'Projects', 'folder_open'],
+  ['#writing', 'Writing — notes, how-tos, papers', 'article'],
   ['#achievements', 'Achievements', 'emoji_events'],
   ['#certifications', 'Certifications', 'verified'],
   ['#guestbook', 'Guestbook', 'forum'],

@@ -8,7 +8,7 @@
  */
 
 import { setCloudTheme } from './themes.js';
-import { profile, skills, projects, timeline, infrastructure } from './data/profile.js';
+import { profile, skills, projects, timeline, infrastructure, writing } from './data/profile.js';
 
 const SECTIONS = [
   'home',
@@ -16,6 +16,7 @@ const SECTIONS = [
   'experience',
   'skills',
   'projects',
+  'writing',
   'achievements',
   'certifications',
   'guestbook',
@@ -164,6 +165,7 @@ export function initTerminal() {
   <span class="term-key">stack</span>           the infrastructure I run at work
   <span class="term-key">skills</span>          skill groups from my CV
   <span class="term-key">projects</span>        personal projects and repo links
+  <span class="term-key">notes</span>           things I have written: notes, how-tos, papers
   <span class="term-key">contact</span>         how to reach me
   <span class="term-key">status</span>          this browser session, honestly
   <span class="term-key">theme &lt;name&gt;</span>     accent: aws | azure | gcp | default
@@ -181,7 +183,7 @@ export function initTerminal() {
 <span class="term-accent" style="font-weight:700">${profile.name}</span>
 Role:      ${profile.role} @ ${profile.employer} (Feb 2026 — present)
 Education: BE Computer Engineering, Kathmandu Engineering College (TU), 2021—2025
-Location:  ${profile.location} (${profile.timezone})
+Location:  ${profile.location} (${profile.timezone}) · home ${profile.hometown}
 Focus:     Hybrid Linux/Windows + AWS, Terraform, Docker/Kubernetes, network security
 Before:    Network &amp; Systems Trainee @ Kontract · DevOps &amp; SecOps Fellow @ Leapfrog · IT Intern @ Nepal Telecom
 Type <span class="term-key">'cat resume.txt'</span> for the full CV or <span class="term-key">'stack'</span> for the infrastructure.
@@ -253,6 +255,28 @@ Type <span class="term-key">'cat resume.txt'</span> for the full CV or <span cla
         );
         break;
 
+      case 'notes':
+      case 'writing':
+        if (!writing.entries.length) {
+          printHTML(
+            `<div class="term-head">~/notes</div>` +
+              '  nothing published yet — the write-ups go up as I clean them up.\n' +
+              `  ask me for one directly: <span class="term-key">${profile.contact.email}</span>`
+          );
+        } else {
+          printHTML(
+            `<div class="term-head">~/notes</div>` +
+              writing.entries
+                .map(
+                  (w) =>
+                    `  [${(w.kind || 'note').padEnd(5)}] <span class="term-key">${w.title}</span>` +
+                    `${w.date ? ` (${w.date})` : ''}\n      ${w.link || 'not published yet'}`
+                )
+                .join('\n')
+          );
+        }
+        break;
+
       case 'contact':
         printHTML(`
 <div class="term-head">CONTACT</div>
@@ -261,6 +285,7 @@ Type <span class="term-key">'cat resume.txt'</span> for the full CV or <span cla
   github    ${profile.contact.github}
   linkedin  ${profile.contact.linkedin}
   location  ${profile.location} (${profile.timezone})
+  home      ${profile.hometown}
         `);
         break;
 
@@ -361,7 +386,7 @@ Type <span class="term-key">'cat resume.txt'</span> for the full CV or <span cla
 
     const candidates = [
       'help', 'whoami', 'cat resume.txt', 'ls', 'stack', 'skills', 'projects',
-      'contact', 'status', 'ping', 'date', 'history', 'clear', 'exit',
+      'notes', 'contact', 'status', 'ping', 'date', 'history', 'clear', 'exit',
       ...SECTIONS.map((s) => `cd ${s}`),
       'theme aws', 'theme azure', 'theme gcp', 'theme default'
     ];
