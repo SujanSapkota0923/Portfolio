@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy
 
 on:
   push:
@@ -27,8 +27,14 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
+      - name: Install
         run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test
 
       - name: Build
         run: npm run build
@@ -39,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: dist          # Publish only the built site
 
   deploy:
     needs: build
