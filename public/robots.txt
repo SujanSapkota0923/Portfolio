@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfolio.sujansapkota07.com.np/sitemap.xml
